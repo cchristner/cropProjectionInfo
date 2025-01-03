@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 # Read the Excel file
 df = pd.read_excel('data.xlsx')
@@ -10,10 +11,12 @@ html_table = df.to_html(index=False, border=1, classes='dataframe')
 with open('index.html', 'r') as file:
     html_content = file.read()
 
-# Replace the placeholder with the generated HTML table
-updated_html_content = html_content.replace(
-    "<!-- Paste the generated HTML table here -->",
-    html_table
+# Replace the existing table with the new HTML table
+updated_html_content = re.sub(
+    r'<table.*?>.*?</table>',
+    html_table,
+    html_content,
+    flags=re.DOTALL
 )
 
 # Save the updated HTML content back to the file
