@@ -1,8 +1,8 @@
 import pandas as pd
 import re
 
-# Read the Excel file
-df = pd.read_excel('data.xlsx')
+# Read the Excel file using openpyxl
+df = pd.read_excel('data.xlsx', engine='openpyxl')
 
 # Convert the DataFrame to an HTML table
 html_table = df.to_html(index=False, border=1, classes='dataframe')
