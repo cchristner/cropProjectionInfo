@@ -38,7 +38,7 @@ def generate_html(articles):
         
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #6b8e23 0%, #556b2f 100%);
             min-height: 100vh;
             padding: 20px;
         }}
@@ -53,7 +53,7 @@ def generate_html(articles):
         }}
         
         .header {{
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #6b8e23 0%, #556b2f 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -76,7 +76,7 @@ def generate_html(articles):
             text-align: center;
             border-bottom: 1px solid #e9ecef;
             font-weight: 600;
-            color: #2c3e50;
+            color: #556b2f;
         }}
         
         .articles {{
@@ -88,7 +88,7 @@ def generate_html(articles):
             margin-bottom: 20px;
             border-radius: 10px;
             overflow: hidden;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #6b8e23;
             transition: all 0.3s ease;
         }}
         
@@ -109,13 +109,13 @@ def generate_html(articles):
         }}
         
         .article-title a {{
-            color: #2c3e50;
+            color: #556b2f;
             text-decoration: none;
             transition: color 0.3s ease;
         }}
         
         .article-title a:hover {{
-            color: #667eea;
+            color: #6b8e23;
         }}
         
         .article-url {{
@@ -129,12 +129,12 @@ def generate_html(articles):
         }}
         
         .footer {{
-            background: #2c3e50;
+            background: #556b2f;
             color: white;
             padding: 20px;
             text-align: center;
             font-size: 0.9rem;
-            opacity: 0.8;
+            opacity: 0.9;
         }}
         
         .no-articles {{
