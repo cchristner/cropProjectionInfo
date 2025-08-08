@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel Data Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Low Productivity Soil</h2>
+    <!-- Low Prod Soil Table Here -->
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Unnamed: 0</th>
+      <th>Cont. Corn</th>
+      <th>Rot. Corn</th>
+      <th>Rot. Beans</th>
+      <th>Wheat</th>
+      <th>DC Beans</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expected yield per acre</td>
+      <td>156.0</td>
+      <td>166.0</td>
+      <td>51.0</td>
+      <td>71.0</td>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <td>Harvest price</td>
+      <td>4.1</td>
+      <td>4.1</td>
+      <td>9.7</td>
+      <td>5.35</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td>Market Revenue</td>
+      <td>639.6</td>
+      <td>680.6</td>
+      <td>494.7</td>
+      <td>379.85</td>
+      <td>349.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Less variable costs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Fertilizer</td>
+      <td>194.0</td>
+      <td>178.0</td>
+      <td>72.0</td>
+      <td>104.0</td>
+      <td>49.0</td>
+    </tr>
+    <tr>
+      <td>- Seed</td>
+      <td>102.0</td>
+      <td>102.0</td>
+      <td>74.0</td>
+      <td>44.0</td>
+      <td>86.0</td>
+    </tr>
+    <tr>
+      <td>- Pesticides</td>
+      <td>125.0</td>
+      <td>119.0</td>
+      <td>75.0</td>
+      <td>40.0</td>
+      <td>58.0</td>
+    </tr>
+    <tr>
+      <td>- Dryer Fuel</td>
+      <td>42.0</td>
+      <td>34.0</td>
+      <td></td>
+      <td></td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>- Machinery fuel ($2.89)</td>
+      <td>21.0</td>
+      <td>21.0</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>- Machinery repairs</td>
+      <td>45.0</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>- Hauling</td>
+      <td>16.0</td>
+      <td>17.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>- Interest</td>
+      <td>28.0</td>
+      <td>26.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>- Insurance/misc.</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>40.0</td>
+      <td>25.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Total variable cost</td>
+      <td>623.0</td>
+      <td>592.0</td>
+      <td>335.0</td>
+      <td>286.0</td>
+      <td>252.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Contribution margin</td>
+      <td>16.6</td>
+      <td>88.6</td>
+      <td>159.7</td>
+      <td>93.85</td>
+      <td>97.2</td>
+    </tr>
+    <tr>
+      <td>(Revenue - variable costs/acre)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Average Productivity Soil</h2>
+    <!-- Avg Prod Soil Table Here -->
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Unnamed: 0</th>
+      <th>Cont Corn</th>
+      <th>Rot. Corn</th>
+      <th>Rot. Beans</th>
+      <th>Wheat</th>
+      <th>DC Beans</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expected yield per acre</td>
+      <td>183.0</td>
+      <td>195.0</td>
+      <td>60.0</td>
+      <td>84.0</td>
+      <td>42.0</td>
+    </tr>
+    <tr>
+      <td>Harvest price</td>
+      <td>4.1</td>
+      <td>4.1</td>
+      <td>9.7</td>
+      <td>5.35</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td>Market Revenue</td>
+      <td>750.3</td>
+      <td>799.5</td>
+      <td>582.0</td>
+      <td>449.4</td>
+      <td>407.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Less variable costs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Fertilizer</td>
+      <td>205.0</td>
+      <td>189.0</td>
+      <td>82.0</td>
+      <td>128.0</td>
+      <td>56.0</td>
+    </tr>
+    <tr>
+      <td>- Seed</td>
+      <td>124.0</td>
+      <td>124.0</td>
+      <td>74.0</td>
+      <td>44.0</td>
+      <td>86.0</td>
+    </tr>
+    <tr>
+      <td>- Pesticides</td>
+      <td>125.0</td>
+      <td>119.0</td>
+      <td>75.0</td>
+      <td>40.0</td>
+      <td>58.0</td>
+    </tr>
+    <tr>
+      <td>- Dryer Fuel</td>
+      <td>49.0</td>
+      <td>39.0</td>
+      <td></td>
+      <td></td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>- Machinery fuel ($2.89)</td>
+      <td>21.0</td>
+      <td>21.0</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>- Machinery repairs</td>
+      <td>45.0</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>- Hauling</td>
+      <td>19.0</td>
+      <td>20.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>- Interest</td>
+      <td>30.0</td>
+      <td>28.0</td>
+      <td>16.0</td>
+      <td>15.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <td>- Insurance/misc.</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>40.0</td>
+      <td>25.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Total variable cost</td>
+      <td>668.0</td>
+      <td>635.0</td>
+      <td>346.0</td>
+      <td>314.0</td>
+      <td>261.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Contribution margin</td>
+      <td>82.3</td>
+      <td>164.5</td>
+      <td>236.0</td>
+      <td>135.4</td>
+      <td>146.4</td>
+    </tr>
+    <tr>
+      <td>(Revenue - variable costs/acre)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    <h2>High Productivity Soil</h2>
+    <!-- High Prod Soil Table Here -->
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Unnamed: 0</th>
+      <th>Cont. Corn</th>
+      <th>Rot. Corn</th>
+      <th>Rot. Beans</th>
+      <th>Wheat</th>
+      <th>DC Beans</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expected yield per acre</td>
+      <td>213.0</td>
+      <td>227.0</td>
+      <td>70.0</td>
+      <td>98.0</td>
+      <td>49.0</td>
+    </tr>
+    <tr>
+      <td>Harvest price</td>
+      <td>4.1</td>
+      <td>4.1</td>
+      <td>9.7</td>
+      <td>5.35</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td>Market Revenue</td>
+      <td>873.3</td>
+      <td>930.7</td>
+      <td>679.0</td>
+      <td>524.3</td>
+      <td>475.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Less variable costs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Fertilizer</td>
+      <td>216.0</td>
+      <td>202.0</td>
+      <td>94.0</td>
+      <td>153.0</td>
+      <td>64.0</td>
+    </tr>
+    <tr>
+      <td>- Seed</td>
+      <td>124.0</td>
+      <td>124.0</td>
+      <td>74.0</td>
+      <td>44.0</td>
+      <td>86.0</td>
+    </tr>
+    <tr>
+      <td>- Pesticides</td>
+      <td>125.0</td>
+      <td>119.0</td>
+      <td>75.0</td>
+      <td>40.0</td>
+      <td>58.0</td>
+    </tr>
+    <tr>
+      <td>- Dryer Fuel</td>
+      <td>58.0</td>
+      <td>46.0</td>
+      <td></td>
+      <td></td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>- Machinery fuel ($2.89)</td>
+      <td>21.0</td>
+      <td>21.0</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>- Machinery repairs</td>
+      <td>45.0</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>- Hauling</td>
+      <td>22.0</td>
+      <td>24.0</td>
+      <td>7.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>- Interest</td>
+      <td>30.0</td>
+      <td>29.0</td>
+      <td>17.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <td>- Insurance/misc.</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>40.0</td>
+      <td>25.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Total variable cost</td>
+      <td>691.0</td>
+      <td>660.0</td>
+      <td>360.0</td>
+      <td>341.0</td>
+      <td>271.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Contribution margin</td>
+      <td>182.3</td>
+      <td>270.7</td>
+      <td>319.0</td>
+      <td>183.3</td>
+      <td>204.3</td>
+    </tr>
+    <tr>
+      <td>(Revenue - variable costs/acre)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

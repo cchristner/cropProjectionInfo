@@ -2,502 +2,1003 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Excel Data Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgFunder News Articles</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border: 1px solid #ddd;
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
-        th {
-            background-color: #f2f2f2;
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .articles {
+            padding: 30px;
+        }
+        
+        .article {
+            background: #f8f9fa;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .article:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .article-content {
+            padding: 25px;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-url {
+            color: #6c757d;
+            font-size: 0.9rem;
+            word-break: break-all;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .no-articles {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .articles {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h2>Low Productivity Soil</h2>
-    <!-- Low Prod Soil Table Here -->
-<table border="1" class="dataframe dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Unnamed: 0</th>
-      <th>Cont. Corn</th>
-      <th>Rot. Corn</th>
-      <th>Rot. Beans</th>
-      <th>Wheat</th>
-      <th>DC Beans</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expected yield per acre</td>
-      <td>156.0</td>
-      <td>166.0</td>
-      <td>51.0</td>
-      <td>71.0</td>
-      <td>36.0</td>
-    </tr>
-    <tr>
-      <td>Harvest price</td>
-      <td>4.1</td>
-      <td>4.1</td>
-      <td>9.7</td>
-      <td>5.35</td>
-      <td>9.7</td>
-    </tr>
-    <tr>
-      <td>Market Revenue</td>
-      <td>639.6</td>
-      <td>680.6</td>
-      <td>494.7</td>
-      <td>379.85</td>
-      <td>349.2</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Less variable costs</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>- Fertilizer</td>
-      <td>194.0</td>
-      <td>178.0</td>
-      <td>72.0</td>
-      <td>104.0</td>
-      <td>49.0</td>
-    </tr>
-    <tr>
-      <td>- Seed</td>
-      <td>102.0</td>
-      <td>102.0</td>
-      <td>74.0</td>
-      <td>44.0</td>
-      <td>86.0</td>
-    </tr>
-    <tr>
-      <td>- Pesticides</td>
-      <td>125.0</td>
-      <td>119.0</td>
-      <td>75.0</td>
-      <td>40.0</td>
-      <td>58.0</td>
-    </tr>
-    <tr>
-      <td>- Dryer Fuel</td>
-      <td>42.0</td>
-      <td>34.0</td>
-      <td></td>
-      <td></td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <td>- Machinery fuel ($2.89)</td>
-      <td>21.0</td>
-      <td>21.0</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <td>- Machinery repairs</td>
-      <td>45.0</td>
-      <td>45.0</td>
-      <td>40.0</td>
-      <td>40.0</td>
-      <td>25.0</td>
-    </tr>
-    <tr>
-      <td>- Hauling</td>
-      <td>16.0</td>
-      <td>17.0</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <td>- Interest</td>
-      <td>28.0</td>
-      <td>26.0</td>
-      <td>16.0</td>
-      <td>13.0</td>
-      <td>12.0</td>
-    </tr>
-    <tr>
-      <td>- Insurance/misc.</td>
-      <td>50.0</td>
-      <td>50.0</td>
-      <td>40.0</td>
-      <td>25.0</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>Total variable cost</td>
-      <td>623.0</td>
-      <td>592.0</td>
-      <td>335.0</td>
-      <td>286.0</td>
-      <td>252.0</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Contribution margin</td>
-      <td>16.6</td>
-      <td>88.6</td>
-      <td>159.7</td>
-      <td>93.85</td>
-      <td>97.2</td>
-    </tr>
-    <tr>
-      <td>(Revenue - variable costs/acre)</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-    <h2>Average Productivity Soil</h2>
-    <!-- Avg Prod Soil Table Here -->
-<table border="1" class="dataframe dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Unnamed: 0</th>
-      <th>Cont Corn</th>
-      <th>Rot. Corn</th>
-      <th>Rot. Beans</th>
-      <th>Wheat</th>
-      <th>DC Beans</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expected yield per acre</td>
-      <td>183.0</td>
-      <td>195.0</td>
-      <td>60.0</td>
-      <td>84.0</td>
-      <td>42.0</td>
-    </tr>
-    <tr>
-      <td>Harvest price</td>
-      <td>4.1</td>
-      <td>4.1</td>
-      <td>9.7</td>
-      <td>5.35</td>
-      <td>9.7</td>
-    </tr>
-    <tr>
-      <td>Market Revenue</td>
-      <td>750.3</td>
-      <td>799.5</td>
-      <td>582.0</td>
-      <td>449.4</td>
-      <td>407.4</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Less variable costs</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>- Fertilizer</td>
-      <td>205.0</td>
-      <td>189.0</td>
-      <td>82.0</td>
-      <td>128.0</td>
-      <td>56.0</td>
-    </tr>
-    <tr>
-      <td>- Seed</td>
-      <td>124.0</td>
-      <td>124.0</td>
-      <td>74.0</td>
-      <td>44.0</td>
-      <td>86.0</td>
-    </tr>
-    <tr>
-      <td>- Pesticides</td>
-      <td>125.0</td>
-      <td>119.0</td>
-      <td>75.0</td>
-      <td>40.0</td>
-      <td>58.0</td>
-    </tr>
-    <tr>
-      <td>- Dryer Fuel</td>
-      <td>49.0</td>
-      <td>39.0</td>
-      <td></td>
-      <td></td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>- Machinery fuel ($2.89)</td>
-      <td>21.0</td>
-      <td>21.0</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <td>- Machinery repairs</td>
-      <td>45.0</td>
-      <td>45.0</td>
-      <td>40.0</td>
-      <td>40.0</td>
-      <td>25.0</td>
-    </tr>
-    <tr>
-      <td>- Hauling</td>
-      <td>19.0</td>
-      <td>20.0</td>
-      <td>6.0</td>
-      <td>9.0</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <td>- Interest</td>
-      <td>30.0</td>
-      <td>28.0</td>
-      <td>16.0</td>
-      <td>15.0</td>
-      <td>13.0</td>
-    </tr>
-    <tr>
-      <td>- Insurance/misc.</td>
-      <td>50.0</td>
-      <td>50.0</td>
-      <td>40.0</td>
-      <td>25.0</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>Total variable cost</td>
-      <td>668.0</td>
-      <td>635.0</td>
-      <td>346.0</td>
-      <td>314.0</td>
-      <td>261.0</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Contribution margin</td>
-      <td>82.3</td>
-      <td>164.5</td>
-      <td>236.0</td>
-      <td>135.4</td>
-      <td>146.4</td>
-    </tr>
-    <tr>
-      <td>(Revenue - variable costs/acre)</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-    <h2>High Productivity Soil</h2>
-    <!-- High Prod Soil Table Here -->
-<table border="1" class="dataframe dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Unnamed: 0</th>
-      <th>Cont. Corn</th>
-      <th>Rot. Corn</th>
-      <th>Rot. Beans</th>
-      <th>Wheat</th>
-      <th>DC Beans</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expected yield per acre</td>
-      <td>213.0</td>
-      <td>227.0</td>
-      <td>70.0</td>
-      <td>98.0</td>
-      <td>49.0</td>
-    </tr>
-    <tr>
-      <td>Harvest price</td>
-      <td>4.1</td>
-      <td>4.1</td>
-      <td>9.7</td>
-      <td>5.35</td>
-      <td>9.7</td>
-    </tr>
-    <tr>
-      <td>Market Revenue</td>
-      <td>873.3</td>
-      <td>930.7</td>
-      <td>679.0</td>
-      <td>524.3</td>
-      <td>475.3</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Less variable costs</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>- Fertilizer</td>
-      <td>216.0</td>
-      <td>202.0</td>
-      <td>94.0</td>
-      <td>153.0</td>
-      <td>64.0</td>
-    </tr>
-    <tr>
-      <td>- Seed</td>
-      <td>124.0</td>
-      <td>124.0</td>
-      <td>74.0</td>
-      <td>44.0</td>
-      <td>86.0</td>
-    </tr>
-    <tr>
-      <td>- Pesticides</td>
-      <td>125.0</td>
-      <td>119.0</td>
-      <td>75.0</td>
-      <td>40.0</td>
-      <td>58.0</td>
-    </tr>
-    <tr>
-      <td>- Dryer Fuel</td>
-      <td>58.0</td>
-      <td>46.0</td>
-      <td></td>
-      <td></td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <td>- Machinery fuel ($2.89)</td>
-      <td>21.0</td>
-      <td>21.0</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <td>- Machinery repairs</td>
-      <td>45.0</td>
-      <td>45.0</td>
-      <td>40.0</td>
-      <td>40.0</td>
-      <td>25.0</td>
-    </tr>
-    <tr>
-      <td>- Hauling</td>
-      <td>22.0</td>
-      <td>24.0</td>
-      <td>7.0</td>
-      <td>10.0</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>- Interest</td>
-      <td>30.0</td>
-      <td>29.0</td>
-      <td>17.0</td>
-      <td>16.0</td>
-      <td>13.0</td>
-    </tr>
-    <tr>
-      <td>- Insurance/misc.</td>
-      <td>50.0</td>
-      <td>50.0</td>
-      <td>40.0</td>
-      <td>25.0</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>Total variable cost</td>
-      <td>691.0</td>
-      <td>660.0</td>
-      <td>360.0</td>
-      <td>341.0</td>
-      <td>271.0</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Contribution margin</td>
-      <td>182.3</td>
-      <td>270.7</td>
-      <td>319.0</td>
-      <td>183.3</td>
-      <td>204.3</td>
-    </tr>
-    <tr>
-      <td>(Revenue - variable costs/acre)</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+    <div class="container">
+        <div class="header">
+            <h1>📰 AgFunder News Articles</h1>
+            <p>Latest articles scraped from AgFunder News</p>
+        </div>
+        
+        <div class="stats">
+            Found 71 articles • Generated on August 07, 2025 at 11:10 PM
+        </div>
+        
+        <div class="articles">
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/v2food-ceo-on-entering-the-us-via-the-daring-foods-acquisition-its-one-of-the-few-brands-thats-growing" target="_blank" title="Open article in new tab">
+                            1. v2food CEO on entering the US via the Daring Foods acquisition: “It’s one of the few brands that’s growing”
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/v2food-ceo-on-entering-the-us-via-the-daring-foods-acquisition-its-one-of-the-few-brands-thats-growing
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/bayer-turning-over-every-stone-to-significantly-contain-glyphosate-litigation-by-end-of-2026" target="_blank" title="Open article in new tab">
+                            2. Bayer ‘turning over every stone’ to ‘significantly contain’ glyphosate litigation by end of 2026
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/bayer-turning-over-every-stone-to-significantly-contain-glyphosate-litigation-by-end-of-2026
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/where-siddhi-capital-is-placing-its-bets-glp-1-is-our-ai-its-a-huge-opportunity" target="_blank" title="Open article in new tab">
+                            3. Where Siddhi Capital is placing its bets: ‘GLP-1 is our AI. It’s a huge opportunity’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/where-siddhi-capital-is-placing-its-bets-glp-1-is-our-ai-its-a-huge-opportunity
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/beyond-meat-brings-in-chief-transformation-officer-cuts-more-jobs-following-another-grim-quarter" target="_blank" title="Open article in new tab">
+                            4. Beyond Meat brings in chief transformation officer, cuts more jobs, following another grim quarter
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/beyond-meat-brings-in-chief-transformation-officer-cuts-more-jobs-following-another-grim-quarter
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/fresh-del-monte-ramps-up-defenses-as-disease-threatens-world-banana-crops" target="_blank" title="Open article in new tab">
+                            5. Fresh Del Monte ramps up defenses as disease threatens world banana crops
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/fresh-del-monte-ramps-up-defenses-as-disease-threatens-world-banana-crops
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/interest-in-biostimulants-extraordinary-despite-86-funding-drop-to-category" target="_blank" title="Open article in new tab">
+                            6. Interest in biostimulants ‘extraordinary’ despite 86% funding drop to category
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/interest-in-biostimulants-extraordinary-despite-86-funding-drop-to-category
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/what-is-ultra-processed-food-first-wave-of-comments-to-fda-usda-highlight-minefield-facing-regulators" target="_blank" title="Open article in new tab">
+                            7. What is ultra-processed food? First wave of comments to FDA/USDA highlight minefield facing regulators
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/what-is-ultra-processed-food-first-wave-of-comments-to-fda-usda-highlight-minefield-facing-regulators
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-ai-in-china-transforming-the-food-system-for-a-brighter-future" target="_blank" title="Open article in new tab">
+                            8. Guest article: AI in China. Transforming the food system for a brighter future
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-ai-in-china-transforming-the-food-system-for-a-brighter-future
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/funding-to-precision-ag-jumps-71-outpaces-ag-biotech-for-the-first-time-since-2017-pitchbook" target="_blank" title="Open article in new tab">
+                            9. Funding to precision ag jumps 71%, outpaces ag biotech for the first time since 2017: Pitchbook
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/funding-to-precision-ag-jumps-71-outpaces-ag-biotech-for-the-first-time-since-2017-pitchbook
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/inedita-bio-on-gene-editing-2-0-we-need-to-put-together-plant-genetics-with-microbial-genetics" target="_blank" title="Open article in new tab">
+                            10. InEdita Bio on gene editing 2.0: ‘We need to put together plant genetics with microbial genetics’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/inedita-bio-on-gene-editing-2-0-we-need-to-put-together-plant-genetics-with-microbial-genetics
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-dos-and-donts-of-raising-capital-in-2025-in-conversation-with-dr-david-buckeridge" target="_blank" title="Open article in new tab">
+                            11. The do’s and don’ts of raising capital in 2025: in conversation with Dr. David Buckeridge
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-dos-and-donts-of-raising-capital-in-2025-in-conversation-with-dr-david-buckeridge
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/cargill-secures-initial-victory-in-erythritol-anti-dumping-case-vs-china-but-move-has-unintended-consequences" target="_blank" title="Open article in new tab">
+                            12. Cargill secures initial victory in erythritol anti-dumping case vs China, but move has unintended consequences
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/cargill-secures-initial-victory-in-erythritol-anti-dumping-case-vs-china-but-move-has-unintended-consequences
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-a-new-class-of-biopesticides-is-ready-will-eu-policy-catch-up" target="_blank" title="Open article in new tab">
+                            13. Guest article: A new class of biopesticides is ready. Will EU policy catch up?
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-a-new-class-of-biopesticides-is-ready-will-eu-policy-catch-up
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/fbn-bags-50m-for-ai-farming-beyond-meat-dumps-meat-oishii-heads-to-japan" target="_blank" title="Open article in new tab">
+                            14. The Week in AgriFoodTech: FBN bags $50m for AI farming, Beyond Meat dumps ‘meat,’ Oishii heads to Japan
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/fbn-bags-50m-for-ai-farming-beyond-meat-dumps-meat-oishii-heads-to-japan
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/automated-vertical-farming-startup-vertical-future-up-for-sale-after-posting-13m-loss" target="_blank" title="Open article in new tab">
+                            15. Automated vertical farming startup Vertical Future up for sale after posting $13m loss
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/automated-vertical-farming-startup-vertical-future-up-for-sale-after-posting-13m-loss
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/prozymi-biolabs-explores-how-bakers-could-have-their-cake-and-eat-it-too-with-gluten-safe-products" target="_blank" title="Open article in new tab">
+                            16. Prozymi Biolabs explores how bakers could have their cake and eat it too with ‘gluten-safe’ products
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/prozymi-biolabs-explores-how-bakers-could-have-their-cake-and-eat-it-too-with-gluten-safe-products
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/armed-with-fresh-funds-tric-robotics-plans-aggressive-fleet-expansion-across-cas-strawberry-fields" target="_blank" title="Open article in new tab">
+                            17. Armed with fresh funds, TRIC Robotics plans aggressive fleet expansion across CA’s strawberry fields
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/armed-with-fresh-funds-tric-robotics-plans-aggressive-fleet-expansion-across-cas-strawberry-fields
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/feeding-kids-funding-soil-inside-rockefeller-foundations-100m-plan-for-regenerative-school-meals" target="_blank" title="Open article in new tab">
+                            18. Feeding kids, funding soil: Inside Rockefeller Foundation’s $100m plan for regenerative school meals
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/feeding-kids-funding-soil-inside-rockefeller-foundations-100m-plan-for-regenerative-school-meals
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/despite-controversy-africabp-aims-to-safeguard-the-continents-biodiversity-through-genomic-sequencing" target="_blank" title="Open article in new tab">
+                            19. Despite controversy, AfricaBP aims to safeguard the continent’s biodiversity through genomic sequencing
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/despite-controversy-africabp-aims-to-safeguard-the-continents-biodiversity-through-genomic-sequencing
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/ahimsa-companies-pumps-12m-into-ohio-plant-takes-long-view-on-alt-meat-were-on-the-right-side-of-history" target="_blank" title="Open article in new tab">
+                            20. Ahimsa Companies pumps $12m into Ohio plant, takes long view on alt meat: ‘We’re on the right side of history’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/ahimsa-companies-pumps-12m-into-ohio-plant-takes-long-view-on-alt-meat-were-on-the-right-side-of-history
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/from-record-series-a-to-market-reset-where-tindle-foods-and-plant-based-meat-go-next" target="_blank" title="Open article in new tab">
+                            21. From record Series A to market reset: Where TiNDLE Foods—and plant-based meat—go next
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/from-record-series-a-to-market-reset-where-tindle-foods-and-plant-based-meat-go-next
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/4ag-robotics-raises-29m-series-b-to-expand-autonomous-mushroom-harvesting-tech" target="_blank" title="Open article in new tab">
+                            22. 4AG Robotics raises $29m Series B to expand autonomous mushroom harvesting tech
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/4ag-robotics-raises-29m-series-b-to-expand-autonomous-mushroom-harvesting-tech
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/krokos-bio-enters-plant-cell-culture-with-saffron-tech-as-cracks-emerge-in-botanical-supply-chains" target="_blank" title="Open article in new tab">
+                            23. Krokos Bio enters plant cell culture arena with saffron tech as cracks emerge in botanical supply chains
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/krokos-bio-enters-plant-cell-culture-with-saffron-tech-as-cracks-emerge-in-botanical-supply-chains
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/from-stoicism-to-psychedelics-farmings-new-emotional-honesty-could-be-its-greatest-strength" target="_blank" title="Open article in new tab">
+                            24. From stoicism to psychedelics, farming’s new emotional honesty could be its greatest strength
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/from-stoicism-to-psychedelics-farmings-new-emotional-honesty-could-be-its-greatest-strength
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/bonsai-robotics-acquires-farm-ng-to-herald-new-era-of-ai-first-machines-that-will-transform-crop-management" target="_blank" title="Open article in new tab">
+                            25. Bonsai Robotics acquires farm-ng to herald new era of ‘AI-first machines that will transform crop management’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/bonsai-robotics-acquires-farm-ng-to-herald-new-era-of-ai-first-machines-that-will-transform-crop-management
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/mission-barns-secures-usda-green-light-for-cultivated-fat-plans-q3-launches" target="_blank" title="Open article in new tab">
+                            26. Mission Barns secures USDA green light for cultivated fat, plans Q3 launches
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/mission-barns-secures-usda-green-light-for-cultivated-fat-plans-q3-launches
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/why-ex-deere-vp-jorge-heraud-joined-terrablaster-this-is-the-number-one-opportunity-in-agtech-right-now" target="_blank" title="Open article in new tab">
+                            27. Why ex-Deere VP Jorge Heraud joined TerraBlaster: ‘This is the number one opportunity in agtech right now’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/why-ex-deere-vp-jorge-heraud-joined-terrablaster-this-is-the-number-one-opportunity-in-agtech-right-now
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-why-agtech-adoption-fails-and-how-a-minimum-viable-ecosystem-mve-can-fix-it" target="_blank" title="Open article in new tab">
+                            28. Guest article: Why agtech adoption fails… and how a Minimum Viable Ecosystem (MVE) can fix it
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-why-agtech-adoption-fails-and-how-a-minimum-viable-ecosystem-mve-can-fix-it
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/could-plant-cell-culture-pave-the-way-for-the-next-generation-of-antioxidants-and-antimicrobials" target="_blank" title="Open article in new tab">
+                            29. Could plant cell culture pave the way for the next generation of antioxidants and antimicrobials?
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/could-plant-cell-culture-pave-the-way-for-the-next-generation-of-antioxidants-and-antimicrobials
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/category-management-x-ai-real-fix-or-just-another-buzzword" target="_blank" title="Open article in new tab">
+                            30. Category management x AI: real fix or just another buzzword?
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/category-management-x-ai-real-fix-or-just-another-buzzword
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/with-trials-underway-in-multiple-markets-olsaro-takes-salt-tolerant-wheat-closer-to-market" target="_blank" title="Open article in new tab">
+                            31. With trials underway in multiple markets, OlsAro takes salt-tolerant wheat closer to market
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/with-trials-underway-in-multiple-markets-olsaro-takes-salt-tolerant-wheat-closer-to-market
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/provectus-algae-nets-fresh-funds-to-scale-methane-reduction-seaweed-tech-platform" target="_blank" title="Open article in new tab">
+                            32. Provectus Algae nets fresh funds to scale methane reduction seaweed tech platform
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/provectus-algae-nets-fresh-funds-to-scale-methane-reduction-seaweed-tech-platform
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/more-epg-customers-share-tales-of-woe-in-david-protein-epogee-litigation" target="_blank" title="Open article in new tab">
+                            33. More EPG customers share tales of woe in David Protein, Epogee litigation
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/more-epg-customers-share-tales-of-woe-in-david-protein-epogee-litigation
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-how-your-ai-undermines-your-innovation-investments-in-subtle-ways" target="_blank" title="Open article in new tab">
+                            34. Guest article: How your AI undermines your innovation investments in subtle ways
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-how-your-ai-undermines-your-innovation-investments-in-subtle-ways
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/10-million-servings-per-run-helaina-scales-human-lactoferrin-production" target="_blank" title="Open article in new tab">
+                            35. 10 million servings per run: Helaina scales human lactoferrin production
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/10-million-servings-per-run-helaina-scales-human-lactoferrin-production
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/exclusive-alt-meat-co-planetarians-is-shutting-down-seeks-buyer-looking-for-de-risked-market-validated-technology" target="_blank" title="Open article in new tab">
+                            36. Exclusive: Alt meat co Planetarians is shutting down, seeks buyer looking for ‘de-risked, market-validated technology’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/exclusive-alt-meat-co-planetarians-is-shutting-down-seeks-buyer-looking-for-de-risked-market-validated-technology
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/gas-fermentation-startup-novonutrients-calls-it-quits-seeks-buyer-for-assets-the-technologys-potential-remains-unchanged" target="_blank" title="Open article in new tab">
+                            37. Gas fermentation startup Novonutrients calls it quits, seeks buyer for assets: ‘The technology’s potential remains unchanged’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/gas-fermentation-startup-novonutrients-calls-it-quits-seeks-buyer-for-assets-the-technologys-potential-remains-unchanged
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/ag-spray-drone-market-disruption-looms-as-deadline-approaches-for-govt-review-of-dji-models" target="_blank" title="Open article in new tab">
+                            38. Ag spray drone market disruption looms as deadline approaches for gov’t review of DJI models
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/ag-spray-drone-market-disruption-looms-as-deadline-approaches-for-govt-review-of-dji-models
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-short-term-vacation-rental-industry-has-a-2-3bn-food-waste-problem" target="_blank" title="Open article in new tab">
+                            39. The short-term vacation rental industry has a $2.3bn food waste problem
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-short-term-vacation-rental-industry-has-a-2-3bn-food-waste-problem
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-week-in-agrifoodtech-remora-robotics-nets-16m-big-idea-ventures-new-cohort-austrias-cultivated-meat-ban" target="_blank" title="Open article in new tab">
+                            40. The Week in AgriFoodTech: Remora Robotics nets $16m, Big Idea Ventures’ new cohort, Austria proposes cultivated meat ban
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-week-in-agrifoodtech-remora-robotics-nets-16m-big-idea-ventures-new-cohort-austrias-cultivated-meat-ban
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/how-amfora-is-preserving-ancient-olive-oil-traditions-and-bringing-profit-to-regenerative-producers" target="_blank" title="Open article in new tab">
+                            41. How Amfora is preserving ancient olive oil traditions—and bringing profit—to regenerative producers
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/how-amfora-is-preserving-ancient-olive-oil-traditions-and-bringing-profit-to-regenerative-producers
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/acre-venture-partners-bets-on-genai-for-npd-with-zucca-investment-tech-will-become-core-to-commercialization-in-cpg" target="_blank" title="Open article in new tab">
+                            42. Acre Venture Partners bets on GenAI for NPD with Zucca investment: Tech will become ‘core to commercialization’ in CPG
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/acre-venture-partners-bets-on-genai-for-npd-with-zucca-investment-tech-will-become-core-to-commercialization-in-cpg
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/biomedit-raises-18-4m-series-b-to-expand-designer-probiotics-platform" target="_blank" title="Open article in new tab">
+                            43. BiomEdit raises $18.4m Series B to expand designer probiotics platform
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/biomedit-raises-18-4m-series-b-to-expand-designer-probiotics-platform
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/competition-price-jumps-expected-as-demand-outpaces-supply-of-european-forest-carbon-credits" target="_blank" title="Open article in new tab">
+                            44. Competition, price jumps expected as demand outpaces supply of European forest carbon credits
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/competition-price-jumps-expected-as-demand-outpaces-supply-of-european-forest-carbon-credits
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/flyblast-files-for-bankruptcy-it-became-clear-that-the-focus-on-cultivated-meat-was-going-to-kill-us" target="_blank" title="Open article in new tab">
+                            45. FlyBlast files for bankruptcy: ‘It became clear that the focus on cultivated meat was going to kill us’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/flyblast-files-for-bankruptcy-it-became-clear-that-the-focus-on-cultivated-meat-was-going-to-kill-us
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/climate-friendly-beef-aldf-sues-usda-for-records-over-misleading-beef-checkoff-environmental-claims" target="_blank" title="Open article in new tab">
+                            46. Climate friendly beef? ALDF sues USDA for records over ‘misleading’ Beef Checkoff environmental claims
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/climate-friendly-beef-aldf-sues-usda-for-records-over-misleading-beef-checkoff-environmental-claims
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-eu-novel-food-delays-why-bureaucracy-is-choking-off-food-innovation" target="_blank" title="Open article in new tab">
+                            47. Guest article: EU novel food delays. Why bureaucracy is choking off food innovation
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-eu-novel-food-delays-why-bureaucracy-is-choking-off-food-innovation
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/breaking-eclipse-ingredients-secures-7m-for-its-capital-light-spin-on-making-human-lactoferrin" target="_blank" title="Open article in new tab">
+                            48. Breaking: Eclipse Ingredients secures funding for its ‘capital-light’ spin on making human lactoferrin
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/breaking-eclipse-ingredients-secures-7m-for-its-capital-light-spin-on-making-human-lactoferrin
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-the-ai-race-has-a-lesson-for-african-agri-sme-support" target="_blank" title="Open article in new tab">
+                            49. Guest article: The AI race has a lesson for African agri SME support
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-the-ai-race-has-a-lesson-for-african-agri-sme-support
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-week-in-agrifoodtech-mars-launches-sustainability-fund-bunge-viterra-merge-olo-goes-private" target="_blank" title="Open article in new tab">
+                            50. The Week in AgriFoodTech: Mars launches ‘sustainability fund,’ Bunge & Viterra merge, Olo goes private
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-week-in-agrifoodtech-mars-launches-sustainability-fund-bunge-viterra-merge-olo-goes-private
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/gates-foundation-invests-in-puna-bio-to-bring-extremophile-based-ag-biologicals-to-africa" target="_blank" title="Open article in new tab">
+                            51. Gates Foundation invests in Puna Bio to bring extremophile-based ag biologicals to Africa
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/gates-foundation-invests-in-puna-bio-to-bring-extremophile-based-ag-biologicals-to-africa
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/little-leaf-farms-ceo-on-building-an-indoor-ag-business-any-logical-approach-to-growing-a-plant-would-include-the-sun" target="_blank" title="Open article in new tab">
+                            52. Little Leaf Farms’ CEO on building an indoor ag business: ‘Any logical approach to growing a plant would include the sun’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/little-leaf-farms-ceo-on-building-an-indoor-ag-business-any-logical-approach-to-growing-a-plant-would-include-the-sun
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/miraterra-acquires-soil-dna-startup-trace-genomics-independent-growth-wasnt-sustainable" target="_blank" title="Open article in new tab">
+                            53. Miraterra acquires soil DNA startup Trace Genomics: ‘Independent growth wasn’t sustainable’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/miraterra-acquires-soil-dna-startup-trace-genomics-independent-growth-wasnt-sustainable
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/anthropics-project-vend-proves-ai-autonomy-is-still-a-ways-off-but-nows-the-time-to-experiment" target="_blank" title="Open article in new tab">
+                            54. Anthropic’s Project Vend proves AI autonomy is still a ways off, but now’s the time to experiment
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/anthropics-project-vend-proves-ai-autonomy-is-still-a-ways-off-but-nows-the-time-to-experiment
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/speciality-chemicals-manufacturer-icl-buys-lavie-bio-activity-from-evogene-in-latest-deal-for-ag-biologicals" target="_blank" title="Open article in new tab">
+                            55. Speciality chemicals manufacturer ICL buys Lavie Bio activity from Evogene in latest deal for ag biologicals
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/speciality-chemicals-manufacturer-icl-buys-lavie-bio-activity-from-evogene-in-latest-deal-for-ag-biologicals
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-realities-of-agrifoodtech-investment-in-2025-venture-capital-is-not-about-being-patient" target="_blank" title="Open article in new tab">
+                            56. The realities of agrifoodtech investment in 2025: ‘Venture capital is not about being patient’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-realities-of-agrifoodtech-investment-in-2025-venture-capital-is-not-about-being-patient
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/fresh-funding-in-hand-complete-farmer-eyes-expansion-of-its-ag-marketplace-across-africa" target="_blank" title="Open article in new tab">
+                            57. Fresh funding in hand, Complete Farmer eyes expansion of its ag marketplace across Africa
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/fresh-funding-in-hand-complete-farmer-eyes-expansion-of-its-ag-marketplace-across-africa
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/agrifoodtech-vc-funding-drops-again-but-these-are-typical-bottom-signals-indicating-real-opportunities" target="_blank" title="Open article in new tab">
+                            58. Agrifoodtech VC funding drops to $5.1bn, but ‘these are typical bottom signals, indicating real opportunities’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/agrifoodtech-vc-funding-drops-again-but-these-are-typical-bottom-signals-indicating-real-opportunities
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-week-in-agrifoodtech-climeworks-raises-162m-danone-acquires-kate-farms-del-monte-files-ch-11" target="_blank" title="Open article in new tab">
+                            59. The Week in AgriFoodTech: Climeworks raises $162m, Danone acquires Kate Farms, Del Monte files Ch. 11
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-week-in-agrifoodtech-climeworks-raises-162m-danone-acquires-kate-farms-del-monte-files-ch-11
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/flagship-pioneerings-new-rna-based-crop-protection-company-could-provide-a-huge-way-to-deal-with-climate-change" target="_blank" title="Open article in new tab">
+                            60. Flagship Pioneering’s new RNA-based crop protection company could provide ‘a huge way to deal with climate change’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/flagship-pioneerings-new-rna-based-crop-protection-company-could-provide-a-huge-way-to-deal-with-climate-change
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/platform10-signs-mou-with-the-biological-products-industry-alliance-to-enhance-grower-confidence-in-biological-products" target="_blank" title="Open article in new tab">
+                            61. Platform10 signs MOU with the Biological Products Industry Alliance to ‘enhance grower confidence in biological products’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/platform10-signs-mou-with-the-biological-products-industry-alliance-to-enhance-grower-confidence-in-biological-products
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/deep-tech-in-regenerative-agriculture-essential-ally-or-unnecessary-intrusion" target="_blank" title="Open article in new tab">
+                            62. Deep tech in regenerative agriculture: essential ally or unnecessary intrusion?
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/deep-tech-in-regenerative-agriculture-essential-ally-or-unnecessary-intrusion
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/bluemethane-deploys-first-production-scale-methane-capture-unit-at-biogas-plant" target="_blank" title="Open article in new tab">
+                            63. Bluemethane deploys first production-scale methane-capture unit at biogas plant
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/bluemethane-deploys-first-production-scale-methane-capture-unit-at-biogas-plant
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/griffith-foods-on-building-trust-transparency-and-long-term-partnerships-in-regenerative-agriculture" target="_blank" title="Open article in new tab">
+                            64. Griffith Foods on building ‘trust, transparency and long-term partnerships’ in regenerative agriculture
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/griffith-foods-on-building-trust-transparency-and-long-term-partnerships-in-regenerative-agriculture
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/chinova-bioworks-rides-maha-wave-expands-global-footprint-as-more-firms-spurn-synthetic-preservatives" target="_blank" title="Open article in new tab">
+                            65. Chinova Bioworks rides MAHA wave, expands global footprint as more firms spurn synthetic preservatives
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/chinova-bioworks-rides-maha-wave-expands-global-footprint-as-more-firms-spurn-synthetic-preservatives
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/guest-article-a-plan-for-the-pile-fixing-californias-biomass-bottleneck" target="_blank" title="Open article in new tab">
+                            66. Guest article: A plan for the pile. Fixing California’s biomass bottleneck
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/guest-article-a-plan-for-the-pile-fixing-californias-biomass-bottleneck
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/the-week-in-agrifoodtech-climatiq-raises-11-7m-doktar-bags-8-7m-planetary-acquires-libre-foods" target="_blank" title="Open article in new tab">
+                            67. The Week in AgriFoodTech: Climatiq raises $11.7m, Doktar bags $8.7m, Planetary acquires Libre Foods
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/the-week-in-agrifoodtech-climatiq-raises-11-7m-doktar-bags-8-7m-planetary-acquires-libre-foods
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/innovation-chokehold-or-meaningless-lawsuit-agtech-weighs-in-on-the-carbon-robotics-vs-laudando-associates-case" target="_blank" title="Open article in new tab">
+                            68. Innovation chokehold or ‘meaningless lawsuit’? Agtech weighs in on the Carbon Robotics vs. Laudando & Associates case
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/innovation-chokehold-or-meaningless-lawsuit-agtech-weighs-in-on-the-carbon-robotics-vs-laudando-associates-case
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/arkeon-ceo-delivers-postmortem-on-protein-from-air-startup-we-just-simply-ran-out-of-time" target="_blank" title="Open article in new tab">
+                            69. Arkeon CEO delivers postmortem on ‘protein from air’ startup: ‘We just simply ran out of time’
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/arkeon-ceo-delivers-postmortem-on-protein-from-air-startup-we-just-simply-ran-out-of-time
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/belgian-startup-koppie-emerges-from-stealth-to-disrupt-alt-coffee-market-with-single-ingredient-offering" target="_blank" title="Open article in new tab">
+                            70. Belgian startup Koppie emerges from stealth to disrupt alt-coffee market with single-ingredient offering
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/belgian-startup-koppie-emerges-from-stealth-to-disrupt-alt-coffee-market-with-single-ingredient-offering
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <div class="article-title">
+                        <a href="https://agfundernews.com/large-scale-microalgae-plant-powered-by-biosolar-leaf-tech-will-be-operational-in-2027-says-arborea" target="_blank" title="Open article in new tab">
+                            71. Large-scale microalgae plant powered by ‘biosolar leaf’ tech will be operational in 2027, says Arborea
+                        </a>
+                    </div>
+                    <div class="article-url">
+                        🔗 https://agfundernews.com/large-scale-microalgae-plant-powered-by-biosolar-leaf-tech-will-be-operational-in-2027-says-arborea
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Generated by AgFunder News Scraper
+        </div>
+    </div>
 </body>
 </html>
